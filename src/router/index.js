@@ -22,7 +22,11 @@ import PasswordChange from '@/views/myinfo/password_change.vue'
 import Layout from '@/views/layout/layout_index.vue'
 import ChangeMyName from '@/views/myinfo/change_myname.vue'
 import Team from '@/views/event/team_score.vue'
-
+import Admin from '@/views/admin/admin_main.vue'
+import AdEvent from '@/views/admin/admin_event.vue'
+import Rule from '@/views/admin/admin_rule.vue'
+import Grade from '@/views/admin/admin_grade.vue'
+import AdTeam from '@/views/admin/admin_team.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -60,6 +64,11 @@ const router = createRouter({
     { path: '/my_history', component: MyHistory },
     { path: '/password_change', component: PasswordChange },
     { path: '/change_myname', component: ChangeMyName },
+    { path: '/admin', component: Admin },
+    { path: '/arrange', component: AdEvent },
+    { path: '/rule', component: Rule },
+    { path: '/grade', component: Grade },
+    { path: '/team', component: AdTeam },
   ],
 })
 
